@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="com.eclipse.demo.lidia.checkCommand"
+            name="Check Extension">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.eclipse.demo.lidia.CheckHandler"
+            commandId="com.eclipse.demo.lidia.checkCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:help?after=additions">
+         <command
+               commandId="com.eclipse.demo.lidia.checkCommand"
+               icon="platform:/plugin/com.windriver.tcl.ui/icons/TCL/componentfolder_available.gif"
+               style="push"
+               tooltip="Check">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+       point="org.eclipse.ui.editors.templates">
+       <include file="config/templates.xml"/>
+   </extension>
+</plugin>

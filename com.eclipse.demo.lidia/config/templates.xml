@@ -1,0 +1,18 @@
+<templates>
+     <template name="Demo C source template" 
+       id="test.codetemplates.csourcefile" 
+       description="Demo C source template" 
+       context="org.eclipse.cdt.core.cSource.contenttype_context" 
+       enabled="true">
+       // ${file_name}
+       // Test Source
+     </template>
+     <template name="Demo H header template" 
+     id="test.codetemplates.headerfile" 
+     description="emo H header template" 
+     context="org.eclipse.cdt.core.cHeader.contenttype_context" 
+     enabled="true">
+     // ${file_name}
+     // Test Header
+   </template>
+ </templates>
