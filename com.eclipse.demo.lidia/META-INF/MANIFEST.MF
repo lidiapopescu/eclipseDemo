@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Lidia
-Bundle-SymbolicName: com.eclipse.demo.lidia;singleton:=true
+Bundle-SymbolicName: org.eclipse.lidia;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: ECLIPSE
 Automatic-Module-Name: com.eclipse.demo.lidia

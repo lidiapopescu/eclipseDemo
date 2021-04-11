@@ -1,6 +1,6 @@
 <templates>
      <template name="Lidia C source template" 
-       id="lidia.codetemplates.csourcefile" 
+       id="com.alina.codetemplates.csourcefile" 
        description="Lidia C source template" 
        context="org.eclipse.cdt.core.cSource.contenttype_context" 
        enabled="true">
@@ -8,7 +8,7 @@
        // Test Source
      </template>
      <template name="Lidia H header template" 
-     id="lidia.codetemplates.headerfile" 
+     id="com.alin.codetemplates.headerfile" 
      description="Lidia H header template" 
      context="org.eclipse.cdt.core.cHeader.contenttype_context" 
      enabled="true">
@@ -16,7 +16,7 @@
      // Test Header
    </template>
      <template name="Lidia CPP source template" 
-       id="lidia.codetemplates.cppsourcefile" 
+       id="com.alin.codetemplates.cppsourcefile" 
        description="Lidia CPP source template" 
        context="org.eclipse.cdt.core.cxxSource.contenttype_context" 
        enabled="true">
@@ -24,7 +24,7 @@
        // Test Source
      </template>
      <template name="Lidia HPP header template" 
-     id="lidia.codetemplates.cppheaderfile" 
+     id="com.alin.codetemplates.cppheaderfile" 
      description="Lidia HPP header template" 
      context="org.eclipse.cdt.core.cxxHeader.contenttype_context" 
      enabled="true">

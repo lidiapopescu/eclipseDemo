@@ -22,7 +22,7 @@
             locationURI="menu:help?after=additions">
          <command
                commandId="com.eclipse.demo.lidia.checkCommand"
-               icon="platform:/plugin/com.windriver.tcl.ui/icons/TCL/componentfolder_available.gif"
+               icon="platform:/plugin/org.eclipse.ui/icons/full/dlcl16/generic_elements.png"
                style="push"
                tooltip="Check">
          </command>

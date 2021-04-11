@@ -45,23 +45,25 @@ public class CheckHandler implements IHandler {
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
 		IConfigurationElement[] extensions = getTemplateExtensions();
-//		for (TemplatePersistenceData data : readContributedTemplates(extensions)) {
+		for (TemplatePersistenceData data : readContributedTemplates(extensions)) {
 //			System.out.println(" "+ data.getTemplate().getName() +  " " + data.getTemplate().getContextTypeId());
-//		}
+		}
 		return null;
 	}
 	
 	private Collection<TemplatePersistenceData> readContributedTemplates(IConfigurationElement[] extensions) {
 		Collection<TemplatePersistenceData> templates= new ArrayList<>();
 		for (IConfigurationElement extension : extensions) {
+			
 			if (extension.getName().equals(TEMPLATE)) {
 //				createTemplate(templates, extension);
 //				System.out.println("Create  TEMPLATE" + extension.getName() + " "+ extension.getValue() +" "+ extension.getNamespace() + " "+ extension.getNamespaceIdentifier());
 			} else if (extension.getName().equals(INCLUDE)) {
 //				System.out.println("INCLUDE in template "+ extension );
 //				readIncludedTemplates(templates, extension);
-				if ( extension.getNamespace().equals("org.eclipse.cdt.ui") || extension.getNamespace().equals("com.eclipse.demo.lidia")  ) {
-					System.out.println("INCLUDE in template "+ extension.getNamespace() );
+				if ( extension.getNamespace().equals("org.eclipse.cdt.ui") || extension.getNamespace().equals("com.eclipse.demo.lidia") || extension.getNamespace().equals("org.eclipse.lidia") ) {
+					System.out.println(extension.getNamespace() + " " + extension.getName());
+//					System.out.println("INCLUDE in template "+ extension.getNamespace() );
 //					Activator.log("INCLUDE in template " + extension.getNamespace());
 				}
 			}
